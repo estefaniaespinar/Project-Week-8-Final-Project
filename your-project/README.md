@@ -1,9 +1,9 @@
 <img src="https://bit.ly/2VnXWr2" alt="Ironhack Logo" width="100"/>
 
-# Title of My Project
-*[Your Name]*
+# Predicting conversion of a telemarketing campaign.
+*Estefania Espinar*
 
-*[Your Cohort, Campus & Date]*
+*[Data Analytics, Barcelona, December 20th]*
 
 ## Content
 - [Project Description](#project-description)
@@ -19,7 +19,8 @@
 - [Links](#links)
 
 ## Project Description
-Write a short description of your project: 3-5 sentences about what your project is about, why you chose this topic (if relevant), and what you are trying to show.
+
+The purpose of this project is to predict if a client will subscribe to a bank deposit or not after a telemarketing campaign. By doing this we will be able to decide which clients are more willing to subscribe and prioritaze them.
 
 ## Hypotheses / Questions
 * What data/business/research/personal question you would like to answer?
@@ -28,10 +29,27 @@ Write a short description of your project: 3-5 sentences about what your project
 Frame your hypothesis with statistical/data languages (i.e. define Null and Alternative Hypothesis). You can use formulas if you want but that is not required.
 
 ## Dataset
-* Where did you get your data? If you downloaded a dataset (either public or private), describe where you downloaded it and include the command to load the dataset.
-* Did you build your own datset? If so, did you use an API or a web scraper? PRovide the relevant scripts in your repo.
-* For all types of datasets, provide a description of the size, complexity, and data types included in your dataset, as well as a schema of the tables if necessary.
-* If the question cannot be answered with the available data, why not? What data would you need to answer it better?
+
+The data is from UCI Machine Learning Repository:  https://archive.ics.uci.edu/ml/datasets/bank+marketing
+This dataset is public available for research. 
+
+Citation:
+[Moro et al., 2014] S. Moro, P. Cortez and P. Rita. A Data-Driven Approach to Predict the Success of Bank Telemarketing. Decision Support Systems, Elsevier, 62:22-31, June 2014
+
+The dataset is related with direct marketing campaigns of a Portuguese banking institution. 
+
+For this project, I'll be using the following datasets:
+
+bank-additional-full.csv with 41188 rows and 20 columns with different features divided in 4 main categories:
+
+* Personal data about the client: age, job, marital status, education, credit in default, housing loan, loan.
+* Data related with the last contact of the current campaign: contact communication type, last contact month of year, last contact day of the week, last contact duration.
+* Other attributes: number of contacts performed during this campaign and for this client, number of days that passed by after the client was last contacted from a previous campaign, number of contacts performed before this campaign and for this client, outcome of the previous marketing campaign.
+* Social and economic context attribute: employment variation rate, consumer price index, consumer confidence index, euribor 3, number of employees.
+
+The dataset also has a column with the output variable (desired target): - y - has the client subscribed a term deposit? (binary: 'yes','no')
+
+bank-additional.csv with 10% of the examples (4119), randomly selected from the previous dataset, and the same number of columns.
 
 ## Cleaning
 Describe your full process of data wrangling and cleaning. Document why you chose to fill missing values, extract outliers, or create the variables you did as well as your reasoning behind the process.
